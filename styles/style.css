@@ -16,3 +16,7 @@ header {
 nav {
   width: 10%;
 }
+
+section {
+  padding: 66px 24px 24px 24px;
+}

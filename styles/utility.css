@@ -1,3 +1,7 @@
+ul {
+  list-style: none;
+}
+
 .wrapper {
   padding: 30px 24px 10px 24px;
 }
@@ -19,9 +23,70 @@
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 .logo a {
-  text-decoration: none;
   color: #28352f;
+  text-decoration: none;
+}
+
+.headline-desc h1 {
+  height: 192px;
+  width: 327px;
+  left: 24px;
+  top: 64px;
+  padding: 15px 24px 63px 24px;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #172b4d;
+}
+
+.headline-desc h1 span {
+  color: #3db682;
+}
+
+.headline-desc p {
+  position: static;
+  width: 327px;
+  height: 164px;
+  left: 24px;
+  top: 314px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 58px 0;
+}
+
+.headline-desc h1 p {
+  position: static;
+  width: 327px;
+  height: 164px;
+  left: 24px;
+  top: 314px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  left: 27.31%;
+  right: 67.36%;
+  top: 73.83%;
+  bottom: 23.42%;
+  justify-content: space-between;
+}
+
+.social-links i {
+  color: #505f79;
 }
