@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,12 +13,22 @@ body {
 /* Header navigation */
 header {
   width: 100%;
+  position: relative;
 }
 
-nav {
-  width: 10%;
+/* Work section */
+.card div {
+  flex-basis: 55%;
+  background: #ebf0ee;
 }
 
-section {
-  padding: 66px 24px 24px 24px;
+.card h1 {
+  width: 295px;
+  margin: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  height: 32px;
+  color: #3a4a42;
+  text-align: center;
 }

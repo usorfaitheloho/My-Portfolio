@@ -3,27 +3,32 @@ ul {
 }
 
 .wrapper {
-  padding: 30px 24px 10px 24px;
+  margin: 0 auto;
+  padding-right: 16px;
+  padding-left: 16px;
+  width: 100vw;
 }
 
-.humbugger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
+.hamburger {
+  display: block;
 }
 
-.humbugger div {
-  border: 1px solid #28352f;
+.bar {
   border-radius: 5px;
   background-color: #28352f;
+  display: block;
+  height: 0.126rem;
+  margin: 0.3125rem auto;
+  transition: all 0.3s ease-in-out;
+  width: 1.562rem;
 }
 
-.nav-bar {
+.main-menu {
   display: flex;
   justify-content: space-between;
-  text-decoration: none;
+  align-items: center;
+  padding: 1.5rem 0;
+  flex-flow: row nowrap;
 }
 
 .logo a {
@@ -31,11 +36,24 @@ ul {
   text-decoration: none;
 }
 
+section.hero {
+  background-image: url('../images/header-illsutration-mobile.png');
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.headline-desc {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+}
+
 .headline-desc h1 {
   height: 192px;
   width: 327px;
-  left: 24px;
-  top: 64px;
   padding: 15px 24px 63px 24px;
   font-size: 40px;
   font-style: normal;
@@ -50,27 +68,14 @@ ul {
 }
 
 .headline-desc p {
-  position: static;
-  width: 327px;
-  height: 164px;
-  left: 24px;
-  top: 314px;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
   color: #172b4d;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   margin: 58px 0;
 }
 
 .headline-desc h1 p {
-  position: static;
-  width: 327px;
-  height: 164px;
-  left: 24px;
-  top: 314px;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -80,13 +85,25 @@ ul {
 .social-links {
   display: flex;
   flex-direction: row;
-  left: 27.31%;
-  right: 67.36%;
-  top: 73.83%;
-  bottom: 23.42%;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links li {
+  padding: 0 8px;
 }
 
 .social-links i {
   color: #505f79;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
